@@ -4,8 +4,9 @@ This is the main entry-point to my word game, WORDIE (think Wordle)
 import os
 from features.game import game
 from features.instructions import instructions
-from words import word_list
-from features.words import request_word
+# from words import word_list
+# from features.api.words import request_word
+from scraper.past_words import get_random_word
 
 os.system('clear')
 
@@ -20,4 +21,4 @@ if instructions_query == 'y':
 ready = input('Are you ready to play Wordie!? (y/n)')
 
 if ready == 'y':
-    game(request_word)
+    game(get_random_word)
