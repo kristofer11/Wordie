@@ -1,6 +1,7 @@
 """
 This is the main entry-point to my word game, WORDIE (think Wordle)
 """
+
 import os
 from features.game import game
 from features.instructions import instructions
@@ -14,10 +15,10 @@ print('\033[36mWelcome to WORDIE.\n')
 
 instructions_query = input('\nWould you like to hear the \033[34minstructions\033[30m? (y/n) ')
 
-if instructions_query == 'y':
+if instructions_query.upper() == 'Y' or instructions_query.upper() == 'YES':
     instructions()
 
 ready = input('Are you ready to play Wordie!? (y/n)')
 
-if ready == 'y':
+if ready == 'y' or ready.upper() == 'YES' or ready.upper() == 'Y':
     game(get_random_word)
