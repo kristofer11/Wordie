@@ -1,10 +1,12 @@
 import os
-import random
+# from words import request_word
 
-def game(word_list):
+def game(word):
     os.system('clear')
     turn = 0
-    word = random.choice(word_list)
+    word = word
+    secret_word = [*word()]
+    print(secret_word)
     guesses = ['', '', '', '', '']
 
     while turn < 5:
@@ -34,9 +36,17 @@ def game(word_list):
             print('GUESSES:')
             print(f'1. {guesses[0]}')
 
-        guess = input(f'Enter your guess: ')
+        guess = input('Enter your guess: ')
+        while True:
+            if len(guess) == 5:
+                break            
+            guess = input('Enter an english word of exactly 5 letters. No numbers or special characters...')
+
         guesses[turn] = guess
+        current_guess = [*guess]
+        print(current_guess)
+
         turn += 1
-        if turn < 5:
-            os.system('clear')
-    print(f'That was guess number {turn}, the word was {word}!')
+        # if turn < 5:
+        #     os.system('clear')
+    print(f'That was guess number {turn}, the word was {secret_word}!')

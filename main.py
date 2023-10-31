@@ -1,10 +1,11 @@
 """
-This is the main entry-point to my word game clone (think Wordle)
+This is the main entry-point to my word game, WORDIE (think Wordle)
 """
 import os
 from features.game import game
 from features.instructions import instructions
 from words import word_list
+from features.words import request_word
 
 os.system('clear')
 
@@ -19,4 +20,4 @@ if instructions_query == 'y':
 ready = input('Are you ready to play Wordie!? (y/n)')
 
 if ready == 'y':
-    game(word_list)
+    game(request_word)
