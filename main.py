@@ -2,10 +2,9 @@
 This is the main entry-point to my word game clone (think Wordle)
 """
 import os
-from features import game
-from instructions import instructions
-
-word_list = ['first', 'words', 'sword', 'cooks', 'yeast', 'beers', 'water']
+from features.game import game
+from features.instructions import instructions
+from words import word_list
 
 os.system('clear')
 
