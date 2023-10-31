@@ -11,7 +11,6 @@ from scraper.past_words import get_random_word
 os.system('clear')
 
 print('\033[36mWelcome to WORDIE.\n')
-print('It is unlike any game you have played on any newspaper website...\033[30m')
 
 instructions_query = input('\nWould you like to hear the \033[34minstructions\033[30m? (y/n) ')
 

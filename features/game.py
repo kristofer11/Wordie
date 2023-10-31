@@ -6,8 +6,6 @@ from features.compare import compare
 def game(word):
     os.system('clear')
     turn = 0
-    word = word
-    print('gametime')
     secret_word = [*word()]
     print(secret_word)
     guesses = ['', '', '', '', '']
@@ -50,15 +48,21 @@ def game(word):
 
         #CHECK GUESS AGAINST SECRET WORD
         guess_list = [*guess]
-        interpreted_guess = compare(secret_word, guess_list)
-    
-        guesses[turn] = interpreted_guess
-        # current_guess = [*guess]
-        # print(current_guess)
+        if guess_list == secret_word:
+            secret_word_string = ''.join(secret_word)
+            print(f'\nThe word was {secret_word_string}, you won in {turn + 1} turn(s)!\n')
+            break
+        else:
+            interpreted_guess = compare(secret_word, guess_list)
+        
+            guesses[turn] = interpreted_guess
+            # current_guess = [*guess]
+            # print(current_guess)
 
-        turn += 1
-        if turn < 5:
-            os.system('clear')
-    print(f'That was guess number {turn}, the word was {secret_word}!')
+            turn += 1
+            if turn < 5:
+                os.system('clear')
 
-game('SWIFT')
+            if turn == 5:
+                print(f'\nYou lost, the word was {"".join(secret_word)}!\n')
+    # print(f'That was guess number {turn + 1}, the word was {secret_word}!')

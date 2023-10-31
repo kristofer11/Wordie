@@ -76,13 +76,13 @@ def interpret_word(word):
     else:
         word_string += word[4][0]
 
-    print(word_string)
+    # print(word_string)
     return word_string
 
 #USE THIS FUNCTION IN GAME.PY TO COMPARE EACH GUESS TO THE SECRET WORD
 def compare(secret, guess):
     coded_guess = is_present(secret, guess)
-    print(coded_guess)
+    # print(coded_guess)
     interpreted_guess = interpret_word(coded_guess)
-    print(interpreted_guess)
+    # print(interpreted_guess)
     return interpreted_guess
