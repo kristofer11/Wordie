@@ -22,7 +22,7 @@ The words for the game are scraped from [Rock Paper Shotgun's list of past Wordl
 
 To play Wordie, you'll need to have Python installed on your computer. Once you've installed Python, you can download the Wordie code and run `main.py` to start the game. Enjoy!
 
-![Wordie Screenshot](assets/wordie_screenshot.jpg)
+![Wordie Screenshot](assets/wordie_screenshot.png)
 
 # Game Logic
 
@@ -44,4 +44,4 @@ The game logic is primarily contained within `game.py`. Here's a step-by-step br
 
 This logic ensures that the game provides the right amount of challenge and feedback to make it engaging and fun.
 
-![Wordie Screenshot](assets/game_play_screenshot.jpg)
+![Wordie Screenshot](assets/game_play_screenshot.png)
