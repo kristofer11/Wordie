@@ -22,11 +22,13 @@ The words for the game are scraped from [Rock Paper Shotgun's list of past Wordl
 
 To play Wordie, you'll need to have Python installed on your computer. Once you've installed Python, you can download the Wordie code and run `main.py` to start the game. Enjoy!
 
+![Wordie Screenshot](assets/wordie_screenshot.jpg)
+
 # Game Logic
 
 The game logic is primarily contained within `game.py`. Here's a step-by-step breakdown:
 
-1. **Game Initialization**: The `game()` function is called with a random word as a parameter, which is fetched from `scraper -> past_words -> get_random_word()`. The terminal is cleared, a variable to track turns is set, and an array of empty strings is initialized to track user guesses.
+1. **Game Initialization**: The `game()` function is called with a random word as a parameter, which is fetched from `scraper.past_words.get_random_word()`. The terminal is cleared, a variable to track turns is set, and an array of empty strings is initialized to track user guesses.
 
 2. **Game Loop**: The game runs a loop that continues until the turn count reaches 5. In each turn, the game prints all the user's choices up to that point (except for the first turn), then prompts the user for their guess.
 
@@ -34,10 +36,12 @@ The game logic is primarily contained within `game.py`. Here's a step-by-step br
 
 4. **Guess Comparison**: The guess is compared against the secret word. If the guess is correct, the game ends and a winning message is displayed.
 
-5. **Guess Interpretation**: If the guess is incorrect, the secret word and guess are passed to the `compare()` function in `features -> compare`. This function codes the guess by marking each letter that is present in the secret word and each letter that is in the correct position. It then converts this coded guess into a string that displays correct letters in green and misplaced letters in yellow.
+5. **Guess Interpretation**: If the guess is incorrect, the secret word and guess are passed to the `compare()` function in `features.compare`. This function codes the guess by marking each letter that is present in the secret word and each letter that is in the correct position. It then converts this coded guess into a string that displays correct letters in green and misplaced letters in yellow.
 
 6. **Turn End**: The interpreted guess is added to the list of guesses at the position corresponding to the current turn, and the turn count is incremented.
 
 7. **Game Over**: If the turn count reaches 5 and the user hasn't guessed the secret word, the game ends and a game over message is displayed along with the secret word.
 
 This logic ensures that the game provides the right amount of challenge and feedback to make it engaging and fun.
+
+![Wordie Screenshot](assets/game_play_screenshot.jpg)

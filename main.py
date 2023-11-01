@@ -18,7 +18,7 @@ instructions_query = input('\nWould you like to hear the \033[34minstructions\03
 if instructions_query.upper() == 'Y' or instructions_query.upper() == 'YES':
     instructions()
 
-ready = input('Are you ready to play Wordie!? (y/n)')
+ready = input('\nAre you ready to play Wordie!? (y/n)')
 
 if ready == 'y' or ready.upper() == 'YES' or ready.upper() == 'Y':
     game(get_random_word)
