@@ -11,9 +11,9 @@ from scraper.past_words import get_random_word
 
 os.system('clear')
 
-print('\033[36mWelcome to WORDIE.\n')
+print('\033[36m\033[45mWelcome to WORDIE.\033[37m\033[40m\n')
 
-instructions_query = input('\nWould you like to hear the \033[34minstructions\033[30m? (y/n) ')
+instructions_query = input('\nWould you like to hear the \033[34mdirections\033[37m? (y/n) ')
 
 if instructions_query.upper() == 'Y' or instructions_query.upper() == 'YES':
     instructions()

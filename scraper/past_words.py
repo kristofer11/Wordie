@@ -26,7 +26,7 @@ def get_random_word():
         print("Failed to retrieve the web page. Status code:", response.status_code)
         return
 
-    return random.choice(words)        
+    return random.choice(words)
 
 # USE TO REPEATEDLY RUN AT SPECIFIED INTERVAL (SECONDS)
 # s = sched.scheduler(time.time, time.sleep)
