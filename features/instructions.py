@@ -1,4 +1,5 @@
 import time
+from features.colors import green_background, yellow_background, default_background
 
 def inst_delay():
     time.sleep(2)
@@ -10,9 +11,9 @@ def instructions():
     inst_delay()
     print('Type any 5-letter, English word.')
     inst_delay()
-    print('When you get a letter correct, in the correct spot, it will change to \033[32mgreen\033[37m.')
+    print(f'When you get a letter correct, in the correct spot, it will change to {green_background}green{default_background}.')
     inst_delay()
-    print('Letters that are in the word, but in a different spot will be \033[33myellow\033[37m.')
+    print(f'Letters that are in the word, but in a different spot will be {yellow_background}yellow{default_background}.')
     inst_delay()
     print('Letters that are not in the word will not change color.')
     inst_delay()
