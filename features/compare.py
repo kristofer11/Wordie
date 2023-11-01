@@ -1,3 +1,5 @@
+from features.colors import yellow_background, green_background
+
 #WORDS FOR TESTING...
 # word1 = ['a', 'b', 'c', 'd', 'e']
 # word2 = ['a', 'b', 'c', 'd', 'e']
@@ -42,39 +44,39 @@ def interpret_word(word):
 
 #CHECK TO SEE IF FIRST LETTER IS RIGHT PLACE, WRONG PLACE, OR NOT PRESENT/CHANGE COLOR ACCORDINGLY
     if len(word[0]) == 3:
-        word_string += f'\033[32m{word[0][0]}\033[0m'
+        word_string += f'{green_background}{word[0][0]}\033[0m'
     elif len(word[0]) == 2:
-        word_string += f'\033[33m{word[0][0]}\033[0m'
+        word_string += f'{yellow_background}{word[0][0]}\033[0m'
     else:
         word_string += word[0][0]
 
 #CHECK TO SEE IF SECOND LETTER IS RIGHT PLACE, WRONG PLACE, OR NOT PRESENT/CHANGE COLOR ACCORDINGLY
     if len(word[1]) == 3:
-        word_string += f'\033[32m{word[1][0]}\033[0m'
+        word_string += f'{green_background}{word[1][0]}\033[0m'
     elif len(word[1]) == 2:
-        word_string += f'\033[33m{word[1][0]}\033[0m'
+        word_string += f'{yellow_background}{word[1][0]}\033[0m'
     else:
         word_string += word[1][0]
-        
+
 #CHECK TO SEE IF THIRD LETTER IS RIGHT PLACE, WRONG PLACE, OR NOT PRESENT/CHANGE COLOR ACCORDINGLY
     if len(word[2]) == 3:
-        word_string += f'\033[32m{word[2][0]}\033[0m'
+        word_string += f'{green_background}{word[2][0]}\033[0m'
     elif len(word[2]) == 2:
-        word_string += f'\033[33m{word[2][0]}\033[0m'
+        word_string += f'{yellow_background}{word[2][0]}\033[0m'
     else:
         word_string += word[2][0]
 #CHECK TO SEE IF FOURTH LETTER IS RIGHT PLACE, WRONG PLACE, OR NOT PRESENT/CHANGE COLOR ACCORDINGLY
     if len(word[3]) == 3:
-        word_string += f'\033[32m{word[3][0]}\033[0m'
+        word_string += f'{green_background}{word[3][0]}\033[0m'
     elif len(word[3]) == 2:
-        word_string += f'\033[33m{word[3][0]}\033[0m'
+        word_string += f'{yellow_background}{word[3][0]}\033[0m'
     else:
         word_string += word[3][0]
 #CHECK TO SEE IF FIFTH LETTER IS RIGHT PLACE, WRONG PLACE, OR NOT PRESENT/CHANGE COLOR ACCORDINGLY
     if len(word[4]) == 3:
-        word_string += f'\033[32m{word[4][0]}\033[0m'
+        word_string += f'{green_background}{word[4][0]}\033[0m'
     elif len(word[4]) == 2:
-        word_string += f'\033[33m{word[4][0]}\033[0m'
+        word_string += f'{yellow_background}{word[4][0]}\033[0m'
     else:
         word_string += word[4][0]
 

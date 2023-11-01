@@ -7,7 +7,7 @@ def game(word):
     secret_word = [*word()]
 
     #UNCOMMENT TO REVEAL SECRET WORD DURING DEV. DELETE BEFORE DEPLOYMENT
-    # print(secret_word)
+    print(secret_word)
     guesses = ['', '', '', '', '']
 
     #PRINT A LIST OF INTERPRETED (COLOR CODED) GUESSES AFTER EACH TURN
