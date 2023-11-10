@@ -15,7 +15,7 @@ from features.colors import red_text
 
 os.system('clear')
 
-print(f'{light_text}{magenta_background}Welcome to WORDIE.{default_background}')
+print(f'\n\n\n\n{light_text}{magenta_background}Welcome to WORDIE.{default_background}')
 
 instructions_query = input(f'\nWould you like to hear the {blue_text}directions{light_text}? (y/n) ')
 
