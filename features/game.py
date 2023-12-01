@@ -1,7 +1,15 @@
+"""
+Game logic. Imported and run in main.py when user chooses to start game
+"""
+
 import os
 from features.compare import compare
 
 def game(word):
+    """
+    Runs one instance of the game.
+    """
+
     os.system('clear')
     turn = 0
     secret_word = [*word()]

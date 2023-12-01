@@ -1,3 +1,9 @@
+"""
+Scrapes website and returns a list of 5 letter words to be used in game.
+Returns a single, random 5 letter word.
+Used to generate "secret_word" in game.py
+"""
+
 import requests
 from bs4 import BeautifulSoup
 import random
@@ -9,6 +15,7 @@ import random
 def get_random_word():
     """
     Scrapes website to retreive a list of 5 letter words.
+    Return random word.
     """
     words = []
     url = "https://www.rockpapershotgun.com/wordle-past-answers/"

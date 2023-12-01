@@ -1,3 +1,7 @@
+"""
+The logic for comparing the user's guess to the secret word.
+"""
+
 from features.colors import yellow_background, green_background
 
 #WORDS FOR TESTING...
@@ -83,8 +87,10 @@ def interpret_word(word):
     # print(word_string)
     return word_string
 
-#USE THIS FUNCTION IN GAME.PY TO COMPARE EACH GUESS TO THE SECRET WORD
 def compare(secret, guess):
+    """
+    USE THIS FUNCTION IN GAME.PY TO COMPARE EACH GUESS TO THE SECRET WORD    
+    """
     coded_guess = is_present(secret, guess)
     interpreted_guess = interpret_word(coded_guess)
     return interpreted_guess

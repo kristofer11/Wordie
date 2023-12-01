@@ -1,10 +1,20 @@
+"""
+Prints instructions if user chooses to view them.
+"""
+
 import time
 from features.colors import green_background, yellow_background, default_background
 
 def inst_delay():
+    """
+    Provides delay between each line of instructions
+    """
     time.sleep(1.5)
 
 def instructions():
+    """
+    Prints rules/instructions for gameplay
+    """
     print('\nDirections: \n')
     inst_delay()
     print('\nThe Goal: guess the secret 5-letter word.')
