@@ -2,7 +2,7 @@ import time
 from features.colors import green_background, yellow_background, default_background
 
 def inst_delay():
-    time.sleep(2)
+    time.sleep(1.5)
 
 def instructions():
     print('\nDirections: \n')

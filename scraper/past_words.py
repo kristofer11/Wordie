@@ -7,6 +7,9 @@ import random
 
 
 def get_random_word():
+    """
+    Scrapes website to retreive a list of 5 letter words.
+    """
     words = []
     url = "https://www.rockpapershotgun.com/wordle-past-answers/"
 

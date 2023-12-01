@@ -8,10 +8,13 @@ from features.instructions import instructions
 # from words import word_list
 # from features.api.words import request_word
 from scraper.past_words import get_random_word
-from features.colors import light_text
-from features.colors import blue_text
-from features.colors import magenta_background, default_background
-from features.colors import red_text
+from features.colors import (
+    light_text,
+    blue_text,
+    magenta_background,
+    default_background,
+    red_text
+)
 
 os.system('clear')
 
