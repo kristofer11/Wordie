@@ -20,7 +20,7 @@ The words for the game are scraped from [Rock Paper Shotgun's list of past Wordl
 
 ## Getting Started
 
-To play Wordie online, you can simply fork [my Repl repo](https://replit.com/@klhvattum/Wordie?v=1#main.py) and run it in the terminal with "python main.py"
+To play Wordie online, you can simply fork my [Wordie Repl](https://replit.com/@klhvattum/Wordie?v=1#main.py) and run it in the terminal with "python main.py"
 
 To play on your computer, you'll need to have Python installed. Once you've installed Python, you can follow these steps:
 
